@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cancel">
+        <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+    </div>
+    <div class="left-section1 active" id="section1-left">
+        
+            <img id="enlarge" class="enlarge" src="images/image-product-1.jpg" alt="" >
+        
+        
+        
+        <div class="micro-picture">
+            <div id="myImg1">
+                <img src="images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div id="myImg2">
+                <img src="images/image-product-2-thumbnail.jpg" alt="">
+            </div>
+            <div id="myImg3">
+                <img src="images/image-product-3-thumbnail.jpg" alt="">
+            </div>
+            <div id="myImg4">
+                <img src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+            
+            
+            
+        </div>
+        <div class="next-prev">
+            <div class="prev">
+                <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="next">
+                <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+            </div>
+        </div>
+    </div>
+    <style>
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    position: relative;
+    background: transparent;
+    /* opacity: 0.2; */
+}
+.cancel{
+    position: absolute;
+    top: 10%;
+    right:36%;
+}
+.cancel svg :hover{
+    color: #ff7d1a;
+    cursor: pointer;
+}
+.left-section1{
+    width: 50%;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.left-section1 .btn{
+    border: none;
+    outline: none;
+    background: none;
+}
+.left-section1 .enlarge{
+    /* border: 3px solid goldenrod; */
+    width: 350px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.enlarge{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+
+}
+.micro-picture{
+    display: flex;
+}
+ .micro-picture img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20%;
+    margin: 0 5px;
+   
+}
+.micro-picture img:hover{
+    border: 2px solid #ff7d1a;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+
+    </style>
+    <script src="web.js"></script>
+</body>
+</html>
